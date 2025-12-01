@@ -81,11 +81,13 @@ Atualização de empresa.
 
 Exemplo de JSON:
 
+```json
 {
   "nomeFantasia": "Auto Peças Atualizada",
   "razaoSocial": "Auto Peças Atualizada LTDA",
   "cnpj": "12.345.678/0001-99"
 }
+```
 
 **DELETE /empresas/{id}**
 
@@ -115,6 +117,7 @@ Cadastro de usuário.
 
 Exemplo de JSON:
 
+```json
 {
   "nome": "João da Silva",
   "email": "joao@email.com",
@@ -122,6 +125,7 @@ Exemplo de JSON:
     { "ddd": "12", "numero": "999999999" }
   ]
 }
+```
 
 **PUT /usuarios/{id}**
 
@@ -129,10 +133,12 @@ Atualização de usuário.
 
 Exemplo de JSON:
 
+```json
 {
   "nome": "João Atualizado",
   "email": "joao.novo@email.com"
 }
+```
 
 **DELETE /usuarios/{id}**
 
@@ -143,10 +149,12 @@ POST /usuarios/{id}/credenciais
 
 Exemplo de JSON:
 
+```json
 {
   "nomeUsuario": "joaosilva",
   "senha": "123456"
 }
+```
 
 ### 3. VEÍCULO
 **GET /veiculos**
@@ -163,23 +171,27 @@ Cadastro de veículo.
 
 Exemplo de JSON:
 
+```json
 {
   "modelo": "Fiat Uno",
   "marca": "Fiat",
   "ano": 2012,
   "placa": "ABC-1234"
 }
+```
 
 **PUT /veiculos/{id}**
 
 Atualização de veículo.
 
+```json
 {
   "modelo": "Fiat Argo",
   "marca": "Fiat",
   "ano": 2020,
   "placa": "XYZ-9876"
 }
+```
 
 **DELETE /veiculos/{id}**
 
@@ -198,20 +210,25 @@ Retorna uma mercadoria pelo ID.
 
 Cadastro de mercadoria.
 
+Json de exemplo:
+```json
 {
   "nome": "Pneu Aro 15",
   "descricao": "Pneu Continental 195/65",
   "preco": 350.90
 }
+```
 
 **PUT /mercadorias/{id}**
 
 Atualização de mercadoria.
 
+```json
 {
   "nome": "Pneu Aro 16",
   "preco": 399.90
 }
+```
 
 **DELETE /mercadorias/{id}**
 
@@ -230,19 +247,23 @@ Retorna um serviço pelo ID.
 
 Cadastro de serviço.
 
+```json
 {
   "descricao": "Troca de óleo",
   "preco": 120.00
 }
+```
 
 **PUT /servicos/{id}**
 
 Atualização de serviço.
 
+```json
 {
   "descricao": "Troca de óleo sintético",
   "preco": 180.00
 }
+```
 
 **DELETE /servicos/{id}**
 
@@ -261,6 +282,7 @@ Retorna uma venda pelo ID.
 
 Cadastro de venda.
 
+```json
 {
   "clienteId": 1,
   "funcionarioId": 2,
@@ -268,14 +290,17 @@ Cadastro de venda.
   "valor": 599.90,
   "data": "2025-01-10"
 }
+```
 
 **PUT /vendas/{id}**
 
 Atualização de venda.
 
+```json
 {
   "valor": 699.90
 }
+```
 
 **DELETE /vendas/{id}**
 
