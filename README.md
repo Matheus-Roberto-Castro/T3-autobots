@@ -30,11 +30,13 @@
 
 ### Configuração do Banco de Dados (MySQL)
 
-Criar o banco manualmente
+Criar o banco manualmente:
 
+```SQL
 CREATE DATABASE autobots;
+```
 
-Configurar as credenciais no arquivo
+## Configurar as credenciais no arquivo
 src/main/resources/application.properties:
 
 ```
