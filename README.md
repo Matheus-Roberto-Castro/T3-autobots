@@ -25,6 +25,30 @@
 
 - Maven instalado
 
+- MySQL instalado e rodando
+
+
+### Configuração do Banco de Dados (MySQL)
+
+Criar o banco manualmente
+
+CREATE DATABASE autobots;
+
+Configurar as credenciais no arquivo
+src/main/resources/application.properties:
+
+```
+spring.datasource.url=jdbc:mysql://localhost:3306/autobots?useSSL=false&serverTimezone=UTC
+spring.datasource.username=seu_usuario
+spring.datasource.password=sua_senha
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+```
+
+Caso esteja usando outro nome de banco, usuário ou senha, ajuste na URL.
+
 ### Rodando o projeto
 
 mvn spring-boot:run
