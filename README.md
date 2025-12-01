@@ -1,5 +1,5 @@
 # **API Automanager — Atividade**
-##Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - Java 17
 
@@ -19,7 +19,7 @@
 
 ## Como Executar o Projeto
 
-###Pré-requisitos
+### Pré-requisitos
 
 - JDK 17 instalado
 
@@ -50,9 +50,9 @@ http://localhost:8080
 
 /vendas
 
-##Cada seção abaixo contém os endpoints e JSONs de exemplo para testes em Postman/Thunder Client.
+## Cada seção abaixo contém os endpoints e JSONs de exemplo para testes em Postman/Thunder Client.
 
-###1. EMPRESA
+### 1. EMPRESA
 **GET /empresas**
 
 Retorna todas as empresas.
